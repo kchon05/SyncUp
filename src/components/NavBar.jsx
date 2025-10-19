@@ -6,11 +6,14 @@ export function NavBar() {
         <nav>
             <div className="navbar-cont">
                 <div className="navbar">
-                    <NavLink to="/search">Search</NavLink>
+                    <NavLink to="/ai">Ask AI</NavLink>
                     <NavLink to="/likes">Likes</NavLink>
-                    <NavLink to="/"><img src="src/assets/logotitlepic.svg"/></NavLink>
-                    <NavLink to="/chat">Chat</NavLink>
-                    <NavLink to="/profile"><img src="src/assets/Default_pfp.svg"/></NavLink>
+                    <NavLink to="/"><img src="src/assets/logotitlepic.svg" className="logopic"/></NavLink>
+                    <NavLink to="/chat">Chat</NavLink>           
+                    <NavLink to="/profile" className="navbar-pfp">
+                        <img src="src/assets/blackpfp.svg" className="pfp black"/>
+                        <img src="src/assets/greenpfp.svg" className="pfp green"/>
+                        </NavLink>
                 </div>
             </div>
         </nav>

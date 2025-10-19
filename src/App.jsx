@@ -3,7 +3,7 @@ import React from 'react';
 import {Routes, Route} from 'react-router-dom'
 import { NavBar } from './components/NavBar';
 import { Home } from './components/Home';
-import { SearchPage } from './components/SearchPage'
+import { AskAIPage } from './components/AskAIPage'
 import { ChatPage } from './components/ChatPage'
 import { LikesPage } from './components/LikesPage'
 import { ProfilePage } from './components/ProfilePage';
@@ -18,7 +18,7 @@ function App() {
         <NavBar/>
 
         <Routes>
-          <Route path="/search" element={<SearchPage/>}/>
+          <Route path="/ai" element={<AskAIPage/>}/>
           <Route path="/likes" element={<LikesPage/>}/>
           <Route path="/" element={<Home/>}/>
           <Route path="/chat" element={<ChatPage/>}/>

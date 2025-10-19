@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 
-export function SearchPage () {
+export function AskAIPage () {
     return (
         <>
-            <p>TBD SEARCH PAGE</p>
+            <p>TBD AI PAGE</p>
         </>
     )
 }

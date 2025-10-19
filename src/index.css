@@ -5,9 +5,13 @@
   box-sizing: border-box;
 }
 
+/* ---------------------------------------------
+                  NAV BAR
+--------------------------------------------- */
+
 .navbar-cont{
   display: flex;
-  background-color: #CCBDF4;
+  /* background-color: #CCBDF4; */
   position: fixed;
   top: 0;
   left: 0;
@@ -21,92 +25,135 @@
   font-size: 1.7rem;
   display: flex;
   text-align: center;
-  justify-content: space-evenly; /* Evenly distributes links across the width */
-  align-items: center; /* Aligns items vertically */
+  justify-content: space-evenly;
+  align-items: center;
 }
 .navbar a{
   text-decoration: none;
-
+  display: flex;       
+  align-items: center;
+  text-decoration: none;
+  transition: color 0.3s ease, font-weight 0.1s linear;
 }
 
-.navbar img:first-of-type {
-  height: 60px; /* logo */
+.navbar a:hover {
+  color: #D0D37B;
+  font-weight: bold;
 }
 
-/* .logotitlepic {
-  width: 10rem;
+.logopic {
+  width: 12.5rem;
   padding-bottom: 0;
-} */
-
-/* .pfppic {
-    width: 4rem;
-} */
-
-/* :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  transition: transform 0.3s ease-in-out;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.logopic:hover {
+   transform: scale(1.1);
 }
 
-body {
-  margin: 0;
+.navbar-pfp {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-pfp .pfp {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.navbar-pfp .black {
+  opacity: 1;
+}
+
+.navbar-pfp .green {
+  opacity: 0;
+}
+
+.navbar-pfp:hover .black {
+  opacity: 0;
+}
+
+.navbar-pfp:hover .green {
+  opacity: 1;
+}
+
+/* STAYS GREEN ON ACTIVE FOR PROFILE */
+
+.navbar-pfp .green {
+  opacity: 0;
+}
+
+.navbar-pfp:hover .green,
+.navbar-pfp.active .green {
+  opacity: 1;
+}
+
+.navbar-pfp:hover .black,
+.navbar-pfp.active .black {
+  opacity: 0;
+}
+
+/* ---------------------------------------------
+                  SEARCH BAR
+--------------------------------------------- */
+.searchbar-cont {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3rem;
+  padding-top: 3rem;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.searchbar-form {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 3rem;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.searchbar-form input {
+  flex: 1; 
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+
+  margin-right: .5rem;
+
+  border-radius: 24px;
+  border: solid #373535 2.5px;
+}
+
+.searchbar-form button {
+  border-radius: 24px;
+  border: solid #373535 2.5px;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  background-color: white;
+
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.searchbar-form button:hover {
+  background-color: #D0D37B;
+  color: white;
+  transform: scale(1.05);
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+/* ---------------------------------------------
+                  HOME PAGE
+--------------------------------------------- */
+
+

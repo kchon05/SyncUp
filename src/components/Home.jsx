@@ -1,9 +1,10 @@
 import { useNavigate } from "react-router-dom";
+import { SearchBar } from "./SearchBar";
 
 export function Home () {
     return (
-        <>
-            <p>TBD HOME PAGE</p>
-        </>
+        <div>
+            <SearchBar/>
+        </div>
     )
 }
