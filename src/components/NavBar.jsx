@@ -7,7 +7,7 @@ export function NavBar() {
             <div className="navbar-cont">
                 <div className="navbar">
                     <NavLink to="/ai">Ask AI</NavLink>
-                    <NavLink to="/likes">Likes</NavLink>
+                    <NavLink to="/likes">Syncs</NavLink>
                     <NavLink to="/"><img src="/img/logotitlepic.svg" className="logopic"/></NavLink>
                     <NavLink to="/chat">Chat</NavLink>           
                     <NavLink to="/myprofile" className="navbar-pfp">
