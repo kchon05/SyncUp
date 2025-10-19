@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "image":"/src/assets/user1.JPEG",
+        "name":"Kaylie Chon",
+        "school":"UW",
+        "major": "Informatics",
+        "grade":"Junior",
+        "age": 20,
+        "skills": "R, JavaScript, SQL",
+        "passions":"Biology, Healthcare, Data Science",
+        "track": "Grow",
+        "hobbies":"Crocheting, Painting, Hiking",
+        "mbti":"ENFJ"
+    },
+    {
+        "id": 2,
+        "image":"/src/assets/user2.jpeg",
+        "name":"Hailey Xu",
+        "school":"UW",
+        "major": "Informatics",
+        "grade":"Junior",
+        "age": 21,
+        "skills": "Statistics, JavaScript, R",
+        "passions":"Healthcare, Biostatistics, Math",
+        "track": "Grow",
+        "hobbies":"Skiing, Serving, Cooking",
+        "mbti":"ISFP"
+    },
+    {
+        "id": 3,
+        "image":"/src/assets/user3.jpeg",
+        "name":"May Tran",
+        "school":"UW",
+        "major": "Informatics",
+        "grade":"Junior",
+        "age": 20,
+        "skills": "Design, Java, R",
+        "passions":"UX/UI, Program Manager, Data Science",
+        "track": "Grow",
+        "hobbies":"Snowboarding, Cooking, Hiking",
+        "mbti":"ESFP"
+    }
+]
