@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+/* REMOVE THIS IF THIS EVER CAUSES ISSUES */
+.page {
+  display: flex;
+  flex-direction: column; /* stack header → main → footer */
+  min-height: 100vh;
+}
+
 /* ---------------------------------------------
                   NAV BAR
 --------------------------------------------- */
@@ -160,30 +167,70 @@
 .userCard-cont {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-
+  justify-content:space-evenly;
+  margin-top: 1rem;
 }
 
 .userCard {
+  display: flex;
   background-color: #CCBDF4;
   width: 350px;
-  height: 350px;
+  height: 300px;
   flex-direction: column;
+
+  padding: 1.1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+
+  border-radius: 24px;
+  box-shadow:0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.userCard:hover {
+   transform: scale(1.1);
 }
 
 .userCard-top {
   display: flex;
-  background-color: blue;
+  flex-direction: column;
+  
+  margin-bottom: 0;
 }
 
-.userCard-bio{
-  background-color: green;
+.nameImage {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userMajor{
+  padding-top: 0;
+}
+
+.userMajor h2 {
+  text-align: left;
+  margin-top: 0.75rem;
+  margin-bottom:-1rem;
+}
+
+.userCard-bio p {
+  font-size: 1.3rem;
 }
 
 .userImage-cont {
+  display: flex;
+  flex-direction: column;
   width: 100px;
   height: 100px;
 }
+
+.name-cont{
+  flex: 1;
+  text-align: left;
+}
+
 
 .userImage-cont img {
   width: 100%;
@@ -191,6 +238,13 @@
   border-radius: 50%;
 }
 
+/* ---------------------------------------------
+                  FOOTER
+--------------------------------------------- */
+  .footer {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 
 /* ---------------------------------------------
                   HOME PAGE

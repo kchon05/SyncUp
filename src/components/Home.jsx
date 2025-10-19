@@ -1,16 +1,53 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
+import { useState, useEffect } from "react";
 import { SearchBar } from "./SearchBar";
 import { HomeUserCard } from "./HomeUserCard";
 import users from "../data/mock-data.json"
 
 export function Home () {
+    const [searchQuery, setSearchQuery] = useState("");
+
+    const handleSearch = (query) => {
+        setSearchQuery(query.toLowerCase());
+    };
+
+    // const filteredUsers = users.filter((user) => 
+    //     // user.name.toLowerCase().includes(searchQuery)
+
+    // );
+
+    const filteredUsers = users.filter((user) => {
+        const fieldsSearching = [
+            user.name,
+            user.major,
+            user.school,
+            user.grade,
+            user.age?.toString(),
+            user.skills,
+            user.passions,
+            user.track,
+            user.hobbies,
+            user.mbti
+        ];
+
+        return fieldsSearching.some(
+            (field) =>
+                field &&
+                field.toString().toLowerCase().includes(searchQuery)
+        );
+    });
+
     return (
         <div>
-            <SearchBar/>
+            <SearchBar onSearch={handleSearch}/>
             <div className="userCard-cont">
-                {users.map((user) => (
-                    <HomeUserCard key={user.id} user={user}/>
-                ))}
+                {filteredUsers.length > 0 ? (
+                    filteredUsers.map((user) => (
+                        <HomeUserCard key={user.id} user={user}/>
+                    ))
+                ) : (
+                    <p>User not found!</p>
+                )}
             </div>
         </div>
     )

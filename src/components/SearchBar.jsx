@@ -19,10 +19,6 @@ export function SearchBar({onSearch}) {
                     value={query}
                     onChange={handleChange}
                 />
-
-                <button type="submit">
-                    <i className="fa fa-search"></i>
-                </button>
             </form>
         </div>
     )

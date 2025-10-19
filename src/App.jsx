@@ -7,6 +7,7 @@ import { AskAIPage } from './components/AskAIPage'
 import { ChatPage } from './components/ChatPage'
 import { LikesPage } from './components/LikesPage'
 import { ProfilePage } from './components/ProfilePage';
+import { Footer } from './components/Footer';
 
 import './App.css'
 
@@ -14,7 +15,7 @@ import './App.css'
 function App() {
   return (
     <>
-      <div>
+      <div className='page'>
         <NavBar/>
 
         <Routes>
@@ -22,8 +23,10 @@ function App() {
           <Route path="/likes" element={<LikesPage/>}/>
           <Route path="/" element={<Home/>}/>
           <Route path="/chat" element={<ChatPage/>}/>
-          <Route path="/profile" element={<ProfilePage/>}/>
+          <Route path="/myprofile" element={<ProfilePage/>}/>
         </Routes>
+
+        <Footer/>
       </div>
         
     </>

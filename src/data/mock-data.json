@@ -40,5 +40,47 @@
         "track": "Grow",
         "hobbies":"Snowboarding, Cooking, Hiking",
         "mbti":"ESFP"
+    },
+    {
+        "id": 4,
+        "image":"img/blackpfp.svg",
+        "name":"Jane Doe",
+        "school":"UW",
+        "major": "CS",
+        "grade":"Sophomore",
+        "age": 19,
+        "skills": "Python, Java, C",
+        "passions":"Algorithms, AI, ML",
+        "track": "Atlassian",
+        "hobbies":"Volunteering, Swimming, Crafting",
+        "mbti":"ENFP"
+    },
+    {
+        "id": 5,
+        "image":"img/blackpfp.svg",
+        "name":"John Doe",
+        "school":"UW",
+        "major": "CS",
+        "grade":"Senior",
+        "age": 21,
+        "skills": "R, C++, Ruby",
+        "passions":"Equity, Cybersecurity, DevOps",
+        "track": "AWS",
+        "hobbies":"Climbing, Bouldering, Fishing",
+        "mbti":"INTP"
+    },
+    {
+        "id": 6,
+        "image":"img/blackpfp.svg",
+        "name":"Jesse Doe",
+        "school":"UW",
+        "major": "HCDE",
+        "grade":"Junior",
+        "age": 20,
+        "skills": "React, JavaScript, Vite",
+        "passions":"UX/UI, Design, Coding",
+        "track": "Grow",
+        "hobbies":"Knitting, Rowing, Jogging",
+        "mbti":"ISTJ"
     }
 ]
