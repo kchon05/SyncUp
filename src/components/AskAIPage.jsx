@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 export function AskAIPage () {
     return (
         <>
-            <p>TBD AI PAGE</p>
+            <p>THIS IS A TEST PLEASEEE WORK</p>
         </>
     )
 }
