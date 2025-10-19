@@ -650,4 +650,99 @@ transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
   box-shadow:0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* ---------------------------------------------
+                  AI PAGE
+--------------------------------------------- */
 
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.askai-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 1rem 6rem;
+  min-height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.askai-title {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.chat-box {
+  background-color: #fff8dc;
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 420px;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.8rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.bubble {
+  padding: 0.8rem 1rem;
+  border-radius: 18px;
+  line-height: 1.4;
+  max-width: 85%;
+  font-size: 0.95rem;
+}
+
+.bubble.user {
+  align-self: flex-end;
+  background-color: #ffd966;
+  color: #000;
+  border-bottom-right-radius: 4px;
+}
+
+.bubble.ai {
+  align-self: flex-start;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  color: #000;
+  border-bottom-left-radius: 4px;
+}
+
+.input-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 420px;
+}
+
+.input-bar input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.input-bar button {
+  background-color: #ffd966;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.input-bar button:hover {
+  background-color: #ffce33;
+}
