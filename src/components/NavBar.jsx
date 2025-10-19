@@ -8,11 +8,11 @@ export function NavBar() {
                 <div className="navbar">
                     <NavLink to="/ai">Ask AI</NavLink>
                     <NavLink to="/likes">Likes</NavLink>
-                    <NavLink to="/"><img src="img/logotitlepic.svg" className="logopic"/></NavLink>
+                    <NavLink to="/"><img src="/img/logotitlepic.svg" className="logopic"/></NavLink>
                     <NavLink to="/chat">Chat</NavLink>           
                     <NavLink to="/myprofile" className="navbar-pfp">
-                        <img src="img/blackpfp.svg" className="pfp black"/>
-                        <img src="img/greenpfp.svg" className="pfp green"/>
+                        <img src="/img/blackpfp.svg" className="pfp black"/>
+                        <img src="/img/greenpfp.svg" className="pfp green"/>
                         </NavLink>
                 </div>
             </div>

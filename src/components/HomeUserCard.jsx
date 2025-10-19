@@ -10,11 +10,9 @@ export function HomeUserCard ({user}) {
                     <div className="userImage-cont">
                         <img src={user.image}/>
                     </div>
-                    <Link to={`/profile/${user.name ? user.name.toLowerCase().replace(" ", "-") : "default-title"}`}>
                         <div className="name-cont">
                         <h1>{user.name}</h1>
                     </div>
-                    </Link>
                 </div>
                 
                 <div className="userMajor">

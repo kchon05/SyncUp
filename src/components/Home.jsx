@@ -1,4 +1,4 @@
-import { useNavigate} from "react-router-dom";
+import { useNavigate, Link} from "react-router-dom";
 import { useState, useEffect } from "react";
 import { SearchBar } from "./SearchBar";
 import { HomeUserCard } from "./HomeUserCard";
@@ -43,7 +43,9 @@ export function Home () {
             <div className="userCard-cont">
                 {filteredUsers.length > 0 ? (
                     filteredUsers.map((user) => (
-                        <HomeUserCard key={user.id} user={user}/>
+                        <Link to={`/profile/${user.name ? user.name.toLowerCase().replace(/\s+/g, "-") : "default-title"}`}>
+                            <HomeUserCard key={user.id} user={user}/>
+                        </Link>
                     ))
                 ) : (
                     <p>User not found!</p>

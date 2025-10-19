@@ -8,6 +8,7 @@ import { ChatPage } from './components/ChatPage'
 import { LikesPage } from './components/LikesPage'
 import { ProfilePage } from './components/ProfilePage';
 import { Footer } from './components/Footer';
+import { IndivProfilePage } from './components/IndivProfilePage';
 
 import './App.css'
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/ai" element={<AskAIPage/>}/>
           <Route path="/likes" element={<LikesPage/>}/>
           <Route path="/" element={<Home/>}/>
+          <Route path="/profile/:userName" element={<IndivProfilePage/>}/>
           <Route path="/chat" element={<ChatPage/>}/>
           <Route path="/myprofile" element={<ProfilePage/>}/>
         </Routes>
