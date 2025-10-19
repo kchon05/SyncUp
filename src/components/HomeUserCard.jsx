@@ -21,7 +21,7 @@ export function HomeUserCard ({user}) {
             </div>
             <div className="userCard-bio">
                 <p>
-                    Hi! I'm {user.name}.
+                    Hi! I'm {user.name}!
                 </p>
             </div>  
         </div>
