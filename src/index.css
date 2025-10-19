@@ -12,7 +12,7 @@ a {
 /* REMOVE THIS IF THIS EVER CAUSES ISSUES */
 .page {
   display: flex;
-  flex-direction: column; /* stack header → main → footer */
+  flex-direction: column; 
   min-height: 100vh;
 }
 
@@ -245,19 +245,28 @@ a {
 /* ---------------------------------------------
                   INDIV PROFILE PAGE
 --------------------------------------------- */
+/* .indivProfPage-bottom {
+  background-color: pink;
+} */
+
 .button-cont {
-  background-color: aqua;
-  margin-top: 5rem;
+  /* background-color: aqua; */
+  margin-top: 5.5rem;
   height: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 50rem;
+
 }
 
 .go-back-btn {
   height: 58.5px;
   width: 106.5px;
-  background-color: white;
+  background-color: #D0D37B;
   border: none;
   border-radius: 29.25px;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  box-shadow:0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .fa-solid.fa-arrow-left {
@@ -265,22 +274,149 @@ a {
   color: #373535;
 }
 
-.go-back-btn:hover {
-  background-color: #D0D37B;
-}
-
 .sync-btn {
+  background-color: #D0D37B;
   height: 58.5px;
+  border: none;
+  border-radius: 10px;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  box-shadow:0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-.sync-btn:hover {
-  background-color: #D0D37B;
+
+.sync-btn:hover, .go-back-btn:hover {
+  background-color: white;
+  transform: scale(1.1);
 }
 
 .information-cont {
-  background-color: pink;
+  background-color: #D0D37B;
+ border-radius: 24px;
+  /* margin-top: rem; */
+  margin-left: 15rem;
+  margin-right: 15rem;
+  padding-bottom: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+   box-shadow:0 2px 6px rgba(0, 0, 0, 0.2);  
 }
+
+.indivProfPfp {
+  height: 140px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+ 
+}
+
+.indivProfPfp img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.indivName h1{
+  font-size: 2.25rem;
+}
+
+.indivMajorSchool {
+  margin-top: -2rem;
+} 
+
+.indivMajorSchool {
+  font-size: .75rem;
+}
+
+.indivLink-btn {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.linkedin-btn, .resume-btn {
+  background-color: white;
+  border: none;
+  width: 7rem;
+  height: 50px;
+  border-radius: 24px;
+  font-size: 1.1rem;
+  box-shadow:0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;  
+}
+
+.linkedin-btn:hover, .resume-btn:hover {
+  background-color: #F1ADD9;
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+.large-traits-cont {
+  display: flex;
+  justify-content: center;
+}
+
+.traits-cont {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.prof-cont, .pers-cont {
+  background-color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 24px;
+}
+
+.prof-cont h3, .pers-cont h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: .5rem;
+}
+
+.tracks-title, .passions-title, .skills-title, .mbti-title, .hobbies-title, .endorsements-title {
+  font-weight:700;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.tracks-title {
+  color:#CCBDF4;
+}
+
+.passions-title {
+  color: #F6DD79;
+}
+
+.skills-title {
+  color: #B4E2F2; 
+}
+
+.mbti-title {
+  color: #B4E2F2;
+}
+
+.hobbies-title {
+  color:#CCBDF4;
+}
+
+.endorsements-title {
+  color:#F1ADD9;
+}
+
+
+
+
 
 /* ---------------------------------------------
                   FOOTER
@@ -291,5 +427,227 @@ a {
   }
 
 /* ---------------------------------------------
-                  HOME PAGE
+                  PROFILE PAGE
 --------------------------------------------- */
+.sync-btn-edit {
+  background-color: #F1ADD9;
+  height: 58.5px;
+  width: 55px;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  box-shadow:0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.go-back-btn-edit {
+   background-color: #F1ADD9;
+    height: 58.5px;
+    width: 106.5px;
+    border: none;
+    border-radius: 29.25px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    box-shadow:0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.sync-btn-edit img {
+  height: 2rem;
+}
+
+.sync-btn-edit:hover, .go-back-btn-edit:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+
+.information-cont-edit {
+  background-color: #F1ADD9;
+ border-radius: 24px;
+  /* margin-top: rem; */
+  margin-left: 15rem;
+  margin-right: 15rem;
+  padding-bottom: 2rem;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+   box-shadow:0 2px 6px rgba(0, 0, 0, 0.2);  
+}
+/* ---------------------------------------------
+                  LIKES PAGE
+--------------------------------------------- */
+
+.likes-cont {
+  margin-top: 5.5rem;
+}
+
+.likes-cont h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.likesUserCard-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  margin-top: 1rem;
+}
+
+.likesUserCard {
+  display: flex;
+  background-color: #D0D37B;
+  width: 350px;
+  height: 300px;
+  flex-direction: column;
+
+  padding: 1.1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+
+  border-radius: 24px;
+  box-shadow:0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.likesUserCard:hover {
+   transform: scale(1.1);
+}
+
+.likesUserCard-top {
+  display: flex;
+  flex-direction: column;
+  
+  margin-bottom: 0;
+}
+
+.likesNameImage {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.likesUserMajor{
+  padding-top: 0;
+}
+
+.likesUserMajor h2 {
+  text-align: left;
+  margin-top: 0.75rem;
+  margin-bottom:-1rem;
+}
+
+.likesUserCard-bio p {
+  font-size: 1.3rem;
+}
+
+.likesUserImage-cont {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+}
+
+.likesName-cont{
+  flex: 1;
+  text-align: left;
+}
+
+
+.likesUserImage-cont img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* ---------------------------------------------
+                  CHAT PAGE
+--------------------------------------------- */
+
+.chat-cont h1 {
+  text-align: left;
+  margin-left: 2.5rem;
+}
+
+.chat-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6.6rem;
+}
+
+.chat-left {
+  display: flex;
+  align-items: center;
+}
+
+.chat-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 4rem;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #F1ADD9;
+  width: 70rem;
+  border-radius: 24px;
+  box-shadow:0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.chat-card:hover {
+   transform: scale(1.1);
+}
+
+.chat-img-cont {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  height: 130px;
+  width: 130px;
+}
+
+.chat-img-cont img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.chat-text-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.chat-name-cont h1{
+  margin-left: 0;
+} 
+
+.chat-text-cont p {
+  font-size: 1.5rem;
+}
+
+.message-btn {
+  background-color: white;
+  border: none;
+  height: 4.3rem;
+  width: 4.3rem;
+  margin-right: 2rem;
+  border-radius: 24px;
+transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.message-btn img {
+  height: 2.5rem;;
+}
+
+.message-btn:hover {
+  background-color: #B4E2F2;
+  box-shadow:0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+

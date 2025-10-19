@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image":"img/user1.JPEG",
+        "image":"/img/user1.JPEG",
         "name":"Kaylie Chon",
         "school":"UW",
         "major": "Informatics",
@@ -11,11 +11,12 @@
         "passions":"Biology, Healthcare, Data Science",
         "track": "Grow",
         "hobbies":"Crocheting, Painting, Hiking",
-        "mbti":"ENFJ"
+        "mbti":"ENFJ",
+        "endorsements": "JavaScript, SQL"
     },
     {
         "id": 2,
-        "image":"img/user2.jpeg",
+        "image":"/img/user2.jpeg",
         "name":"Hailey Xu",
         "school":"UW",
         "major": "Informatics",
@@ -25,11 +26,13 @@
         "passions":"Healthcare, Biostatistics, Math",
         "track": "Grow",
         "hobbies":"Skiing, Serving, Cooking",
-        "mbti":"ISFP"
+        "mbti":"ISFP",
+        "endorsements": "JavaScript, Statistics"
+        
     },
     {
         "id": 3,
-        "image":"img/user3.jpeg",
+        "image":"/img/user3.jpeg",
         "name":"May Tran",
         "school":"UW",
         "major": "Informatics",
@@ -39,11 +42,12 @@
         "passions":"UX/UI, Program Manager, Data Science",
         "track": "Grow",
         "hobbies":"Snowboarding, Cooking, Hiking",
-        "mbti":"ESFP"
+        "mbti":"ESFP",
+        "endorsements": "Java, R"
     },
     {
         "id": 4,
-        "image":"img/blackpfp.svg",
+        "image":"/img/blackpfp.svg",
         "name":"Jane Doe",
         "school":"UW",
         "major": "CS",
@@ -53,11 +57,12 @@
         "passions":"Algorithms, AI, ML",
         "track": "Atlassian",
         "hobbies":"Volunteering, Swimming, Crafting",
-        "mbti":"ENFP"
+        "mbti":"ENFP",
+        "endorsements": "Python, C"
     },
     {
         "id": 5,
-        "image":"img/blackpfp.svg",
+        "image":"/img/blackpfp.svg",
         "name":"John Doe",
         "school":"UW",
         "major": "CS",
@@ -67,11 +72,12 @@
         "passions":"Equity, Cybersecurity, DevOps",
         "track": "AWS",
         "hobbies":"Climbing, Bouldering, Fishing",
-        "mbti":"INTP"
+        "mbti":"INTP",
+        "endorsements": "R, Ruby"
     },
     {
         "id": 6,
-        "image":"img/blackpfp.svg",
+        "image":"/img/blackpfp.svg",
         "name":"Jesse Doe",
         "school":"UW",
         "major": "HCDE",
@@ -81,6 +87,7 @@
         "passions":"UX/UI, Design, Coding",
         "track": "Grow",
         "hobbies":"Knitting, Rowing, Jogging",
-        "mbti":"ISTJ"
+        "mbti":"ISTJ",
+        "endorsements": "React, JavaScript"
     }
 ]

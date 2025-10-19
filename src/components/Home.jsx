@@ -11,10 +11,6 @@ export function Home () {
         setSearchQuery(query.toLowerCase());
     };
 
-    // const filteredUsers = users.filter((user) => 
-    //     // user.name.toLowerCase().includes(searchQuery)
-
-    // );
 
     const filteredUsers = users.filter((user) => {
         const fieldsSearching = [
@@ -27,7 +23,8 @@ export function Home () {
             user.passions,
             user.track,
             user.hobbies,
-            user.mbti
+            user.mbti,
+            user.endorsements
         ];
 
         return fieldsSearching.some(
