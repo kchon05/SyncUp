@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { SearchBar } from "./SearchBar";
-import { ChatCard } from "./ChatCardTemp";
+import { ChatCard } from "./ChatCard";
 import users from "../data/mock-data.json";
 
 export function ChatPage () {
