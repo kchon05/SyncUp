@@ -26,7 +26,7 @@ export function ChatCard ({user}) {
                 </div>
 
                 <button className="message-btn">
-                    <img src="/public/img/message.svg"/>
+                    <img src="/img/message.svg"/>
                 </button>
             </div>
         </>
