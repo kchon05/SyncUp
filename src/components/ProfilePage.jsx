@@ -31,7 +31,7 @@ export function ProfilePage () {
             <div className="indivProfPage-bottom">
                 <div className="information-cont-edit">
                     <div className="indivProfPfp">
-                        <img src="/public/img/blackpfp.svg"/>
+                        <img src="/img/blackpfp.svg"/>
                     </div>
 
                     <div className="indivName">

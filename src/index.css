@@ -52,6 +52,11 @@ a {
   font-weight: bold;
 }
 
+.navbar a.active {
+   color: #D0D37B;
+   font-weight: bold;
+}
+
 .logopic {
   width: 12.5rem;
   padding-bottom: 0;
@@ -95,6 +100,7 @@ a {
 }
 
 /* STAYS GREEN ON ACTIVE FOR PROFILE */
+
 
 .navbar-pfp .green {
   opacity: 0;
@@ -350,7 +356,7 @@ a {
 }
 
 .linkedin-btn:hover, .resume-btn:hover {
-  background-color: #F1ADD9;
+  background-color: #B4E2F2;
   transform: scale(1.1);
   font-weight: bold;
 }
